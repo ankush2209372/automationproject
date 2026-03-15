@@ -1,6 +1,7 @@
+@signup
 Feature: signup
 
-  Scenario : validate user should able to login with valid credential
+  Scenario: validate user should able to login with valid credential
     Given open the browser
     And enter the url
     And enter the credential
@@ -39,7 +40,7 @@ Feature: signup
 
       Scenario: Validate email already exists
         Given open the browser
-        And user is  clicking in Signup link
+        And user is  clicking o
         And enter valid name
         And enter existing email
         And enter valid password
@@ -47,14 +48,14 @@ Feature: signup
         When user is  clicking in Signup button
         Then user should see email already registered message
 
-  Scenario : Validate signup button is enabled when fields are valid
+  Scenario: Validate signup button is enabled when fields are valid
     Given Open the Browser
     And enter the URL
     And click on Signup link
     And enter valid details
     Then Signup button should be enabled
 
-  Scenario : Validate spaces are not allowed in mandatory fields
+  Scenario: Validate spaces are not allowed in mandatory fields
     Given Open the Browser
     And enter the URL
     And click on Signup link
